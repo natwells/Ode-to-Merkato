@@ -1,147 +1,81 @@
+<!DOCTYPE html>
+<html>
 <head>
 
+    <link rel="stylesheet" href="mystyle.css">
 
-    <link rel="stylesheet" href="style.css">
-
-    
-    
-   <style>
-     
-
-       @import url('https://fonts.googleapis.com/css2?family=Khula&display=swap');
-
-       @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-
-        /*element selector */
-       
-               h1{
-                font-family: 'Khula', sans serif;
-                color: #72675a;
-                text-align: center;
-                
-       }
-       
-       p {margin: 25px 50px 25px 50px;}
-       /* class selector*/
-       
-       
-       h2{
-        font-family: 'Khula', sans-serif;
-        color: #B1A79B;
-        margin: 25px 50px 25px 50px;
-         }
-      
-       .body{
-           color: #72675a;
-           font-family: 'open sans', sans-serif;
-           font-size: small;
-           margin: 25px 50px 25px 50px;
-        
-        
-        btn btn-link {
-        background-color: #72675a; 
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        font-family: 'open sans', sans-serif;
-        }
-        
-
-      
-   </style>
 
 </head>
 
 <body>
-    
-<center>
-<div>
-    <h1>
-        Ode to Things: Parker Clay Merkato Signature Tote Bag
-    </h1>
-    
-        <img id="merkate" src="Merkate front.png" width="500" height="500">
-        
-        <p class="body">
-            <button type="button" class="btn btn-link"><a href="https://www.parkerclay.com/collections/best-sellers/products/merkato-signature-tote?variant=34762953350"> Parker Clay Merkato Signature Tote</a></button>
-        </p>
-</div>
-</center>
 
+    <!-- Slideshow container -->
+<div class="slideshow-container">
 
-
-
-
-
-<div >
-<center>
-
-    <h2 class="title">
-        Merkato Signature Tote
-    </h2>
-        <p class="body">"An everyday bag that pairs versatility with superior quality. There’s a reason it’s everyone’s favorite. This bag goes where you go."</p>
-
-        <p class="body">I received my second Parker Clay bag recently and so far I am in love with the quality, style, and background story that goes into each Parker Clay Piece. Parker Clay was founded to help communities in Ethiopia by providing employment for locals to make quality leather goods. Each piece is handmade and the crafstmanship is evident. I love that when I buy from Parker Clay I am investing in a piece that will last a lifetime and am helping others along the way.</p>
-    
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xNdp5CmjcvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </center>
-</div>
-
-<div class="two">
-
-    <h2 class="title">
-        Details
-        </h2>
-        <ul style="list-style-type:disc"
-        class="body">
-            <li>Crafted from premium Ethiopian full grain leather</li>
-            <li> Please note that since leather is a natural material, each product can have slight color, texture, and grain variations</li>
-            <li>Premium interior zipper pocket</li>
-            <li>Unlined interior</li>
-            <li>Fits a 15" laptop</li>
-            <li>Interior D-ring to hook keys</li>
-         </ul>
-        <center>
-         <img src="Merkato interior.png" width="400" height="400">
-        </center>
-        
-</div>
-
-
-<div class="three">
-    <h2 class="title">
-        Dimensions
-    </h2>
-    <ul style="list-style-type:disc"
-    class="body">
-       <li>14.5" L x 5" W x 13" H</li>
-       <li> 10" handle drop</li>
-       <li>Approximately 2 lbs</li>
-        </ul>
-       <center>
-        <img src="Merkato back.png" width="400" height="400">
-    </center>
-</div>
- 
-
-<div>
-    <h2 class="title">
-        A Fun Sidekick: Tigi Card Wallet
-    </h2>
-        <p class="body">The Tigi Card Wallet is perfect for holding business cards or just a few necessities. This limited edition Tigi Card Wallet is the perfect accessory to give as gift or toss inside your Merkato tote for extra organization. </p>
-
-        <center>
-        <img src="Tigi Card Wallet.png" width="400">
-        </center>
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Merkate front.png" style="width:100%">
+      <div class="text">"An everyday bag that pairs versatility with superior quality. There’s a reason it’s everyone’s favorite. This bag goes where you go."
     </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Merkato back.png" style="width:100%">
+      <div class="text">Dimensions: 14.5" L x 5" W x 13" H, 10" handle drop, Approximately 2 lbs</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Merkato interior.png" style="width:100%">
+      <div class="text">Crafted from premium Ethiopian full grain leather, Premium interior zipper pocket, Unlined interior, Fits a 15" laptop, Interior D-ring to hook keys</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script> 
+<var slideIndex = 1;
+    showSlides(slideIndex);
+
+function plusSlides(n){
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides (n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+</script>
+
 
 
 
 </body>
-    
-    
+</html>
